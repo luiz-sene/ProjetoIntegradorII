@@ -19,7 +19,7 @@ sem fio, havendo tempo hábil pode-se estudar uma interface através do smartpho
 	
   Sobre a residência a ser automatizada, optou-se por uma simples. A mesma possui
 um quarto, um banheiro e uma cozinha anexa a sala. Temos ainda um quintal com jardim, e
-uma garagem. Sobre a disposição dos cômodo, podem ser melhor visualizados na planta.
+uma garagem. Sobre a disposição dos cômodos, os mesmos podem ser melhor visualizados na planta.
 	
   Todos os cômodos possuem uma lâmpada de LED, incluindo o jardim e o quintal. 
   Os sensores de gás estão presentes na cozinha e no banheiro, que 
