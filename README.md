@@ -1,4 +1,4 @@
-# ProjetoIntegradorII
+# Projeto Integrador II
 Repositório com o conteúdo gerado pelas atividades relacionas da disciplina Projeto Integrador II.
 O projeto tem como objetivo aplicar conceitos de domótica na automação de uma residência.
 
