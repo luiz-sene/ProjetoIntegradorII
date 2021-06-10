@@ -9,8 +9,7 @@ bem como os LEDS, de forma remota. É necessário também ter acesso às mediç�
 por 2 tipos de sensores, de presença e de gás. E por fim seremos capazes de controlar
 um portão eletrônico.
 
-A fim de facilitar a implementação do projeto, uma maquete deve ser feita para
-que possamos testar as funcionalidades.
+A fim de facilitar a implementação do projeto, utlizaremos uma maquete para testar as funcionalidades.
 
 A integração destas funcionalidades será feita através da plataforma Arduino.
 Ele será o responsável pela aquisição dos dados emitidos pelos sensores e por controlar
