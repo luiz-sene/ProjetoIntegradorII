@@ -33,5 +33,5 @@ simboliza a localização de  algo a ser implementado. Segue a legenda.
 
 - ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+)  - **Lâmpadas de LED**
 - ![#964B00](https://via.placeholder.com/15/964B00/000000?text=+)  - **Sensor de movimento**
-- ![#FFB6C1](https://via.placeholder.com/15/FFB6C1/000000?text=+) - **Sensor de gás**
-- ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) - **Servomotor**
+- ![#FFB6C1](https://via.placeholder.com/15/FFB6C1/000000?text=+) -  **Sensor de gás**
+- ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) -  **Servomotor**
