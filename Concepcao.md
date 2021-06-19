@@ -25,3 +25,13 @@ uma garagem. Sobre a disposição dos cômodos, os mesmos podem ser melhor visua
   Os sensores de gás estão presentes na cozinha e no banheiro, que 
 possui aquecimento a gás, enquanto sensores de presença estão nos fundos e na frente, 
 onde também está o portão eletrônico.
+
+![figura 1 - Planta baixa da residência.](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/planta_legenda.png)
+
+Na imagem acima, representando o domicilio podemos notar retângulos coloridos. Cada um desses retângulos 
+simboliza a localização de  algo a ser implementado. Segue a legenda.
+
+- ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+)  - **Lâmpadas de LED**
+- ![#964B00](https://via.placeholder.com/15/964B00/000000?text=+)  - **Sensor de movimento**
+- ![#FFB6C1](https://via.placeholder.com/15/FFB6C1/000000?text=+) - **Sensor de gás**
+- ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) - **Servomotor**
