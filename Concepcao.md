@@ -21,7 +21,7 @@ sem fio, havendo tempo hábil pode-se estudar uma interface através do smartpho
 um quarto, um banheiro, uma cozinha e uma sala. Temos ainda um quintal com jardim, e
 uma garagem. Sobre a disposição dos cômodos, os mesmos podem ser melhor visualizados na planta.
 	
-  Todos os cômodos possuem uma lâmpada de LED, incluindo o jardim e o quintal. 
+  Todos os cômodos possuem uma lâmpada de LED, incluindo o jardim no quintal e a garagem. 
   Os sensores de gás estão presentes na cozinha e no banheiro, que 
 possui aquecimento a gás, enquanto sensores de presença estão nos fundos e na frente, 
 onde também está o portão eletrônico.
