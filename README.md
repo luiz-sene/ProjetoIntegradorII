@@ -5,3 +5,5 @@ O projeto tem como objetivo aplicar conceitos de domótica na automação de uma
 [Introdução a domótica](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/Domotica.md)
 
 [Concepção](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/Concepcao.md)
+
+[Design](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/Design.md)
