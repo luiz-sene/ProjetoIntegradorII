@@ -3,12 +3,16 @@
 Conforme as necessidades do projeto, apresentadas na concepção, foi desenvolvida uma maquete eletrônica no *software* **Fritzing**.
 Como é possível notar na figura 1, os seguintes componentes foram utilizados:
 
-- **1x - Arduino MEGA 2560**
-- **2x - Sensores de movimento HC-SR501.**
-- **2x - Sensores detectores de gás representados pelo MQ-4.**
-- **1x - Servomotor Tower Pro SG90.**
-- **5x - LEDS que representam as lâmpadas.**
-- **1x - Protoboard**
+Quantidade | Componente
+-----------|--------------
+ 1 | Arduino MEGA 2560.
+ 2 | Sensores de movimento HC-SR501.
+ 2 | Sensores detectores de gás representados pelo MQ-4.
+ 1  |Servomotor Tower Pro SG90.
+ 5  |LEDS que representam as lâmpadas.
+ 1  |Protoboard.
+ 5 | Resistores 1k.
+
 
 ![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/design_PI_2.png)
 *figura 1 - Maquete eletrônica.*
