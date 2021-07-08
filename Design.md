@@ -1,6 +1,6 @@
 # Design
 
-Conforme as necessidades do projeto apresentadas na concepção, foi desenvolvida uma maquete eletrônica no *software* **Fritzing**.
+Conforme as necessidades do projeto, apresentadas na concepção, foi desenvolvida uma maquete eletrônica no *software* **Fritzing**.
 Como é possível notar na figura 1, os seguintes componentes foram utilizados:
 
 - **1x - Arduino MEGA 2560**
