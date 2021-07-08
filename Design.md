@@ -5,13 +5,16 @@ Como é possível notar na figura 1, os seguintes componentes foram utilizados:
 
 Quantidade | Componente
 -----------|--------------
- 1 | Arduino MEGA 2560.
- 2 | Sensores de movimento HC-SR501.
- 2 | Sensores detectores de gás representados pelo MQ-4.
- 1  |Servomotor Tower Pro SG90.
- 5  |LEDS que representam as lâmpadas.
- 1  |Protoboard.
- 5 | Resistores 1k.
+ 1 | Arduino MEGA 2560
+ 1 | Protoboard
+ 1 | Servomotor Tower Pro SG90
+ 2 | Sensores de movimento HC-SR501
+ 2 | Sensores detectores de gás representados pelo MQ-4
+ 5 | LEDS que representam as lâmpadas
+ 5 | Resistores 1k
+
+
+
 
 
 ![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/design_PI_2.png)
