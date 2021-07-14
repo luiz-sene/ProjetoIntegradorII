@@ -10,8 +10,8 @@ Quantidade | Componente
  1 | Servomotor Tower Pro SG90
  2 | Sensores de movimento HC-SR501
  2 | Sensores detectores de gás representados pelo MQ-4
- 5 | LEDs que representam as lâmpadas
- 5 | Resistores 1k
+ 6 | LEDs que representam as lâmpadas
+ 6 | Resistores 1k
 
 
 
