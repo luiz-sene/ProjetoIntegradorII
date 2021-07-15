@@ -17,7 +17,7 @@ Quantidade | Componente
 
 
 
-![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/design_PI_2.png)
+![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/design_PI_2_2_6leds2.png)
 *figura 1 - Maquete eletrônica.*
 
 Na figura 2 podemos observar o esquemático referente a figura 1.
