@@ -8,10 +8,10 @@ Quantidade | Componente
  1 | Arduino MEGA 2560
  1 | Protoboard
  1 | Servomotor Tower Pro SG90
- 2 | Sensores de movimento HC-SR501
- 2 | Sensores detectores de gás representados pelo MQ-4
- 6 | LEDs que representam as lâmpadas
- 6 | Resistores 1k
+ 1 | Sensores de movimento HC-SR501
+ 1 | Sensores detectores de gás representados pelo MQ-4
+ 5 | LEDs que representam as lâmpadas
+ 5 | Resistores 1k
 
 
 
@@ -37,7 +37,7 @@ void setup()   {
 void loop() 
 {
   /*coloca o pino 7 em nivel alto
-  /*espera um tempo em seguida coloca o pino em nivel baixo, desta aforma o led acende e apaga*/
+  espera um tempo em seguida coloca o pino em nivel baixo, desta forma o led acende e apaga apos um tempo */
   digitalWrite(ledPin, HIGH);  
   delay(1000);               
   digitalWrite(ledPin, LOW); 
@@ -58,8 +58,8 @@ void loop()
   /*variavel recebe o valor enviado pelo sensor no pino8*/
   int mve_sensor1 = digitalRead(mvePin);
   
-  /*caso o sensor detecte movimento envial um sinal em nivel alto, o valor da variavel é comparado
-  com o valor alto, e é mostrado para o usuário que o movimento foi detectado*/
+  /*caso o sensor detecte movimento envia um sinal em nivel alto, o valor da variavel é comparado
+  com valor alto,caso positivo, é mostrado para o usuário que o movimento foi detectado*/
   if(mve_sensor1 == HIGH)
   Serial.print("Movimento detectado");
   
@@ -85,8 +85,8 @@ void loop()
 /*recebe a leitura do sensor de gás*/    
 int gas_sensor1 = analogRead(gasPinA0);
   
-/*compara o valor enviado pelo valor limite estabelido anteriormente
-caso o valor seja superior ao permitido mostra ao usuario o valor e um aviso de seguranca*/
+/*compara o valor recebido do sensor com o valor limite estabelecido anteriormente,
+caso este seja superior ao permitido, mostra ao usuario a medida e um aviso de seguranca*/
 if(gas_sensor1 >= gas_limt){
     Serial.print("Atenção!! Possível vazamento de gás.");
     Serial.print("Leitura: ");
@@ -134,7 +134,7 @@ void setup()   {
  /*atribui o objeto servo ao pino resposável pelo servo motor*/
   servo.attach(srvPin11);
 
-  /*define a posição do servo motor como 0*/
+  /*define a posição inicial do servo motor como 0*/
   servo.write(0);
 }
  
