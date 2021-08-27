@@ -119,7 +119,7 @@ delay(500);
 
 #### Teste do Servo motor
 ````C
-/*atribui ao pino 12 o buzzer */
+/*atribui ao pino 11 o servo motor */
 int srvPin =  11; 
 
 /*variavel responsavel por armazenar a posição do motor*/
