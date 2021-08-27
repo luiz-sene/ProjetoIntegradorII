@@ -21,8 +21,8 @@ Quantidade | Componente
 
 ## Testes dos componentes
 
-Afim de verificar se os componentes individualmente se comportavam como esperado alguns testes foram realizados.
-Para isso foi utilizada a plataforma *ARDUINO IDE* e a linguagem **C**. Cada um foi testado separadamente de acordo com os códigos abaixo.
+A fim de verificar se os componentes individualmente se comportavam como esperado alguns testes foram realizados.
+Para isso foi utilizada a plataforma *ARDUINO IDE* e a **linguagem C**. Cada um foi testado separadamente de acordo com os códigos abaixo.
 
 #### Teste dos LED
 ````C
