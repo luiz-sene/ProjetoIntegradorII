@@ -25,6 +25,9 @@ A fim de verificar se os componentes individualmente se comportavam como esperad
 Para isso foi utilizada a plataforma *ARDUINO IDE* e a **linguagem C**. Cada um foi testado separadamente de acordo com os códigos abaixo.
 
 #### Teste dos LED
+<details>
+  <summary>Clique para ver.</summary>
+ 
 ````C
 /* atribui ao led que esta sendo testado o pino 7*/
 int ledPin =  7; 
@@ -44,7 +47,12 @@ void loop()
   delay(1000);              
 } 
 ````
+</details>
+
 #### Teste do sensor de movimento PIR
+<details>
+  <summary>Clique para ver.</summary>
+ 
 ````C
 int mvePin =  8; 
  
@@ -65,8 +73,13 @@ void loop()
   
   delay(1000)
 } 
-````
+```` 
+</details>
+
 #### Teste do sensor de gás MQ2
+<details>
+  <summary>Clique para ver.</summary>
+
 ````C
 /*atribui ao pino analogico A0 o sensor de gas */
 int gasPin =  A0; 
@@ -95,8 +108,13 @@ if(gas_sensor1 >= gas_limt){
   delay(1000)
 } 
 ````
+</details>
+
 
 #### Teste do Buzzer
+<details>
+  <summary>Clique para ver.</summary>
+
 ````C
 /*atribui ao pino 12 o buzzer */
 int buzPin =  12; 
@@ -116,8 +134,12 @@ ditialWrite(buzPìn, HIGH);
 delay(500);
 } 
 ````
+</details>
 
 #### Teste do Servo motor
+<details>
+  <summary>Clique para ver.</summary>
+
 ````C
 /*atribui ao pino 11 o servo motor */
 int srvPin =  11; 
@@ -153,3 +175,5 @@ for(pos = 90; pos >= 0; pos--){
  delay(20);
 } 
 ````
+</details>
+
