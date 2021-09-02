@@ -24,7 +24,7 @@ uma garagem. Sobre a disposição dos cômodos, os mesmos podem ser melhor visua
   O sensor de gás esta presente na cozinha, enquanto o sensor de presença esta nos fundos.
 
 
-![figura 1 - Planta baixa da residência.](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/planta_legenda.png)
+![figura 1 - Planta baixa da residência.](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/planta_legenda_2.png)
 
 Na imagem acima, representando o domicilio podemos notar retângulos coloridos. Cada um desses retângulos 
 simboliza a localização de  algo a ser implementado. Segue a legenda.
