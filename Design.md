@@ -16,7 +16,7 @@ Quantidade | Componente
 
 
 
-![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/design_PI_2_2_6leds2.png)
+![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/design_PI_2_2.1_bb.png)
 *figura 1 - Maquete eletrônica.*
 
 ## Testes dos componentes
