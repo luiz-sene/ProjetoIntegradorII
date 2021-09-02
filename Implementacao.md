@@ -15,13 +15,12 @@ as exigências do projeto.É interessante destacar que visando uma interação e
 
   COD  | Ambiente                 
  ----- | ---------                
- z / Z | sala de estar         
+ z / Z | fundos         
  x / X | cozinha               
- c / C | sala de estar         
- v / V | quarto                
- b / B | garagem               
- n / N | fundos                
- m     | apaga todas
+ c / C | quarto         
+ v / V | banheiro                
+ b / B | sala de estar                        
+   m   | apaga todas
  a / A | abre/fecha portão
 
  
@@ -44,11 +43,11 @@ as exigências do projeto.É interessante destacar que visando uma interação e
                     |                             | -
                     |                       pino8 | <- sensor movimento
                     |                             |
-                    |                       pino7 | -> led sala de estar
+                    |                       pino7 | -> led fundos
                     |                       pino6 | -> led cozinha
       sensor gas -> |A0                     pino5 | -> led quarto
-                    |                       pino4 | -> led garagem
-                    |                       pino3 | -> led fundos
+                    |                       pino4 | -> led banheiro
+                    |                       pino3 | -> led sala de estar
                     |                             |
                     -------------------------------
 **/
@@ -101,10 +100,10 @@ void setup()   {
   pinMode(mvePin8, INPUT);
   pinMode(gasPinA0, INPUT);
 
-  /*atribui ao objeto servo ao pino resposável pelo servo motor*/
+  /*atribui ao objeto servo o pino resposável pelo servo motor*/
   servo.attach(srvPin11);
 
-  /*define a posição do servo motor como 0*/
+  /*inicia o servo motor sempre na posicao 0*/
   servo.write(0);
 }
 
@@ -113,18 +112,19 @@ void loop()
   /*variável responsável pela interação com o teclado*/
   char tecla;
 
-  /*obtem o o tempo passado em millissegundos desde que o Arduino começou a executar o programa*/
+  /*obtem o o tempo passado em millissegundos desde que o Arduino começou a executar o programa
+  desta forma podemos controlar quanto tempo levara para cada medicao seja feita*/
   unsigned long tmpo_atual = millis();
 
   if (tmpo_atual - tmpo_tarefa > tmpo_sensor) {
 
     tmpo_tarefa = tmpo_atual;
 
-    /*recebe a leitura do sensor de presenca, após isso aplica um delay de 500ms para estabilizar o sinal de leitura*/
+    /*recebe a leitura do sensor de presenca, e chama a funcao relacionada*/
     int mve_sensor1 = digitalRead(mvePin8);
     presenca_1(mve_sensor1);
 
-    /*recebe a leitura do sensor de gás, após isso aplica um delay de 500ms para estabilizar o sinal de leitura*/
+    /*recebe a leitura do sensor de gása e chama a funcao relacionada*/
     int gas_sensor1 = analogRead(gasPinA0);
     gas_dect(gas_sensor1);
 
@@ -135,7 +135,7 @@ void loop()
     tecla = Serial.read();
   }
 
-  /*se for pressionado o botõa 'a' aciona o servo motor para abrir o portão, se for presionado 'A', o portão fecha*/
+  /*se for pressionado o botõa 'a' aciona o servo motor para abrir o portão, se for presionado 'A', o portão fechara*/
   if (tecla == 'a' || tecla == 'A') {
     srv_motor(tecla);
   }
@@ -146,16 +146,16 @@ void loop()
 }
 
 /* função responsável pelo acionamento do servo motor.
-   recebe como parametro uma char que define se portão ir a abrir ou fechar.
+   recebe como parametro uma char que define se portão ira a abrir ou fechar.
 */
 void srv_motor(char tecla) {
 
   /*caso receba o valor 'a' o portão abrira*/
   if (tecla == 'a') {
     pos = 0;
-    /* a partir da posicao 0, incrementa um a um o angulo do motor até o limite de 180
+    /* a partir da posicao 0, incrementa um a um o angulo do motor até o limite de 90 graus
        possui um delay de forma a controlar a velocidade de acionamento*/
-    while (pos <= 180) {
+    while (pos <= 90) {
       unsigned long tmpo_at = millis();
       if (tmpo_at - tmpo_mtor > vel_mtor) {
         pos++;
@@ -166,8 +166,8 @@ void srv_motor(char tecla) {
   }
   /*caso receba o valor 'A' o portão ira fechar*/
   else if (tecla == 'A') {
-    pos = 180;
-    /* a partir da posicao 1800, decrementa um a um o angulo do motor até o limite de 180
+    pos = 90;
+    /* a partir da posicao 90, decrementa um a um o angulo do motor até o limite de 0 graus
        possui um delay de forma a controlar a velocidade de acionamento*/
     while (pos >= 0) {
       unsigned long tmpo_at = millis();
@@ -181,7 +181,7 @@ void srv_motor(char tecla) {
 }
 
 
-/*função responsável pelo acionamento do servo motor.
+/*função responsável pelo controle do sensor de gas.
   recebe como parametro uma int com o valor detectado pelo sensor.
 */
 void gas_dect(int gas_sensor1) {
@@ -225,12 +225,11 @@ void presenca_1(int mve_sensor1) {
   --------------------------------|
   |  COD  | ambiente              |
   --------------------------------|
-  | z / Z | sala de estar         |
+  | z / Z | fundos                |
   | x / X | cozinha               |
-  | c / C | sala de estar         |
-  | v / V | quarto                |
-  | b / B | garagem               |
-  | n / N | fundos                |
+  | c / C | quarto                |
+  | v / V | banheiro              |
+  | b / B | sala de estar         |
   |   m   | apaga todas           |
   --------------------------------|
   as letras minusculas acendem o led, enquanto o envio das maiusculas apaga.
@@ -284,13 +283,7 @@ void acende_led(char tecla) {
   else if (tecla == 'B') {
     digitalWrite(ledPin3, LOW);
   }
-  else if (tecla == 'n')
-  {
-    digitalWrite(ledPin2, HIGH);
-  }
-  else if (tecla == 'N') {
-    digitalWrite(ledPin7, LOW);
-  }
+
 
   else if (tecla == 'm')
   {
