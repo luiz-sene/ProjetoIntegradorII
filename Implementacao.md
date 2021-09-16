@@ -313,4 +313,4 @@ mostrada na planta da etapa de concepção.
 *figura 2 - Vista da parte de cima*
 
   ![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/vista_atras.jpeg)
-*figura 2 - Vista da parte de trás*
+*figura 3 - Vista da parte de trás*
