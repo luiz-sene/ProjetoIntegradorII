@@ -300,4 +300,17 @@ void acende_led(char tecla) {
 
 ## Maquete
 
-Em desenvolvimento.
+Para a maquete foi utilizado isopor do tipo Depron, que oferece uma estrutura firme.
+O desing da casa, bem como o posicionamento de leds e sensores, seguem a disposição
+mostrada na planta da etapa de concepção. 
+  
+ ![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/vista_frente.jpeg)
+*figura 1 - Vista da frente da casa*
+
+  Podemos observar na imagem abaixo a disposição dos componentes, e sua semelhança com o proposto na concepção.
+  
+ ![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/vista_superior.jpeg)
+*figura 2 - Vista da parte de cima*
+
+  ![figura1](https://github.com/luiz-sene/ProjetoIntegradorII/blob/main/imagens/vista_atras.jpeg)
+*figura 2 - Vista da parte de trás*
